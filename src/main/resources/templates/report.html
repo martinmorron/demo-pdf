@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"
+      style="background:#EDEDED!important">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+    <title>Restriction of access to Ajax Company API</title>
+    <style>@media only screen {
+        html {
+            min-height: 100%;
+            background: #EDEDED
+        }
+    }
+
+    @media only screen and (max-width: 616px) {
+        .small-float-center {
+            margin: 0 auto !important;
+            float: none !important;
+            text-align: center !important
+        }
+    }
+
+    @media only screen and (max-width: 616px) {
+        table.body img {
+            width: auto;
+            height: auto
+        }
+
+        table.body center {
+            min-width: 0 !important
+        }
+
+        table.body .container {
+            width: 100% !important
+        }
+
+        table.body .columns {
+            height: auto !important;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 16px !important;
+            padding-right: 16px !important
+        }
+
+        table.body .columns .columns {
+            padding-left: 0 !important;
+            padding-right: 0 !important
+        }
+
+        table.body .collapse .columns {
+            padding-left: 0 !important;
+            padding-right: 0 !important
+        }
+
+        th.small-6 {
+            display: inline-block !important;
+            width: 50% !important
+        }
+
+        th.small-12 {
+            display: inline-block !important;
+            width: 100% !important
+        }
+
+        .columns th.small-12 {
+            display: block !important;
+            width: 100% !important
+        }
+
+        table.menu {
+            width: 100% !important
+        }
+
+        table.menu td, table.menu th {
+            width: auto !important;
+            display: inline-block !important
+        }
+
+        table.menu.vertical td, table.menu.vertical th {
+            display: block !important
+        }
+
+        table.menu[align=center] {
+            width: auto !important
+        }
+    }
+
+    .underline-link {
+        Margin: 0;
+        border-bottom: 2px solid #5AE4AA;
+        color: #181818 !important;
+        display: initial;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: left;
+        text-decoration: none
+    }
+
+    .bold-text {
+        font-weight: bold !important;
+        text-decoration: none;
+        color: inherit;
+    }
+    </style>
+</head>
+<body style="-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;Margin:0;background:#EDEDED!important;box-sizing:border-box;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;min-width:100%;padding:0;text-align:left;width:100%!important">
+<table class="body"
+       style="Margin:0;background:#EDEDED!important;border-collapse:collapse;border-spacing:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;height:100%;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;width:100%">
+    <tr style="padding:0;text-align:left;vertical-align:top">
+        <td class="center layout" align="center" valign="top"
+            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:16px;text-align:left;vertical-align:top;word-wrap:break-word">
+            <center style="min-width:600px;width:100%">
+                <table align="center" class="container header float-center"
+                       style="Margin:0 auto;background:#181818;border-collapse:collapse;border-spacing:0;color:#fff!important;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:600px">
+                    <tbody>
+                    <tr style="padding:0;text-align:left;vertical-align:top">
+                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                            <table class="row"
+                                   style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                                <tbody>
+                                <tr style="padding:0;text-align:left;vertical-align:top">
+                                    <th class="text-center small-12 large-12 columns first last"
+                                        style="Margin:0 auto;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:16px;text-align:center;width:584px">
+                                        <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <th style="Margin:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left">
+                                                    <table class="spacer"
+                                                           style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <td height="45px"
+                                                                style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:45px;font-weight:400;hyphens:auto;line-height:45px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                &#xA0;
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <center style="min-width:552px;width:100%"><img
+                                                            src="https://ajax.systems/img/social/ajax-logo.png"
+                                                            class="logo float-center" width="100" align="center"
+                                                            style="-ms-interpolation-mode:bicubic;Margin:0 auto;clear:both;display:block;float:none;margin:0 auto;max-width:100%;outline:0;text-align:center;text-decoration:none;width:auto"></img>
+                                                    </center>
+                                                    <table class="spacer"
+                                                           style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <td height="29px"
+                                                                style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:29px;font-weight:400;hyphens:auto;line-height:29px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                &#xA0;
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h1 class="text-center"
+                                                        style="Margin:0;Margin-bottom:24px;color:#fff!important;font-family:Roboto,sans-serif;font-size:24px;font-weight:300;line-height:1.2;margin:0;margin-bottom:24px;padding:0;text-align:center;word-wrap:normal">
+                                                        Restriction of access to Ajax Company API</h1>
+                                                    <table class="spacer"
+                                                           style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <td height="10px"
+                                                                style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                &#xA0;
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </th>
+                                                <th class="expander"
+                                                    style="Margin:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table align="center" class="container content float-center"
+                       style="Margin:0 auto;background:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:600px">
+                    <tbody>
+                    <tr style="padding:0;text-align:left;vertical-align:top">
+                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                            <table class="wrapper" align="center"
+                                   style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                <tr style="padding:0;text-align:left;vertical-align:top">
+                                    <td class="wrapper-inner"
+                                        style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;padding-left:16px;padding-right:16px;text-align:left;vertical-align:top;word-wrap:break-word">
+                                        <table class="spacer"
+                                               style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td height="40px"
+                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:40px;font-weight:400;hyphens:auto;line-height:40px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                    &#xA0;
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="row content"
+                                               style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                                            <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <th class="small-12 large-12 columns first last"
+                                                    style="Margin:0 auto;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:16px;text-align:left;width:584px">
+                                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <th style="Margin:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left">
+                                                                <p style="Margin:0;Margin-bottom:10px;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                                                    <span class="medium bold-text"
+                                                                          style="font-weight:500">Hello!</span></p>
+                                                                <table class="spacer"
+                                                                       style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                    <tbody>
+                                                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                        <td height="10px"
+                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            &#xA0;
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p style="Margin:0;Margin-bottom:10px;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                                                    <span class="medium" style="font-weight:500">Your access to your Ajax Company API account with integration ID JTB6QuoKH3uP4zKoM1TY has been restricted since 2022-04-18 13:03.</span>
+                                                                </p>
+                                                                <table class="spacer"
+                                                                       style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                    <tbody>
+                                                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                        <td height="16px"
+                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:16px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            &#xA0;
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+
+                                                                <p style="Margin:0;Margin-bottom:10px;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                                                    <span class="medium">If you have questions, contact our support team at <a
+                                                                            class="bold-text"
+                                                                            href="mailto:support@ajax.systems">support@ajax.systems</a></span>
+                                                                </p>
+                                                            </th>
+                                                            <th class="expander"
+                                                                style="Margin:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table align="center" class="container footer float-center"
+                       style="Margin:0 auto;background:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:600px">
+                    <tbody>
+                    <tr style="padding:0;text-align:left;vertical-align:top">
+                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                            <table class="wrapper" align="center"
+                                   style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                <tr style="padding:0;text-align:left;vertical-align:top">
+                                    <td class="wrapper-inner"
+                                        style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;padding-left:16px;padding-right:16px;text-align:left;vertical-align:top;word-wrap:break-word">
+                                        <table class="spacer"
+                                               style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td height="32px"
+                                                    style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:32px;font-weight:400;hyphens:auto;line-height:32px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                    &#xA0;
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="row content"
+                                               style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                                            <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <th class="small-6 large-6 columns first"
+                                                    style="Margin:0 auto;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:8px;text-align:left;width:284px">
+                                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <th style="Margin:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left">
+                                                                <p style="Margin:0;Margin-bottom:10px;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;margin-bottom:0;padding:0;text-align:left">
+                                                                    <span>Best regards,</span><br/><span
+                                                                        class="medium bold-text"
+                                                                        style="font-weight:500">Ajax Team.</span>
+                                                                </p>
+                                                                <table class="spacer"
+                                                                       style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                    <tbody>
+                                                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                        <td height="24px"
+                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            &#xA0;
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <th class="small-6 large-6 columns last" valign="bottom"
+                                                    style="Margin:0 auto;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:284px">
+                                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <th style="Margin:0;color:#181818;font-family:Roboto,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left">
+                                                                <img src="https://ajax.systems/img/social/ajax-logo-dark.png"
+                                                                     class="float-right" width="80"
+                                                                     style="-ms-interpolation-mode:bicubic;clear:both;display:block;float:right;max-width:100%;outline:0;text-align:right;text-decoration:none;width:auto"></img>
+                                                                <table class="spacer"
+                                                                       style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                    <tbody>
+                                                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                        <td height="24px"
+                                                                            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#181818;font-family:Roboto,sans-serif;font-size:24px;font-weight:400;hyphens:auto;line-height:24px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            &#xA0;
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </center>
+        </td>
+    </tr>
+</table><!-- prevent Gmail on iOS font size manipulation -->
+<div style="display:none;white-space:nowrap;font:15px courier;line-height:0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</div>
+</body>
+</html>
